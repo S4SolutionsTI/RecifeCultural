@@ -10,6 +10,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        String [] pontos= {"Recife Antigo","Marco Zero", "Fonte das Cinco Pontas", "Porto de Galinha"};
     }
 }
