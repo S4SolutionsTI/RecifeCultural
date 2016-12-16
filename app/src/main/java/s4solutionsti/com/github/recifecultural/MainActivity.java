@@ -2,6 +2,7 @@ package s4solutionsti.com.github.recifecultural;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,5 +12,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         String [] pontos= {"Recife Antigo","Marco Zero", "Fonte das Cinco Pontas", "Porto de Galinha"};
+        ListView listaPontos = (ListView) findViewById(R.id.lista_pontos);
     }
 }
