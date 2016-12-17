@@ -21,8 +21,10 @@ public class MainActivity extends AppCompatActivity {
         listaPontos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, "Botao clicado!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Botao clicado!" + position, Toast.LENGTH_SHORT).show();
+
                 Intent intentVaiProFormulario = new Intent(MainActivity.this, DetalharPontoActivity.class);
+                intentVaiProFormulario.putExtra("id", position);
                 startActivity(intentVaiProFormulario);
             }
         });
